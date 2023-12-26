@@ -1,0 +1,73 @@
+:root {
+    /* Colors */
+    /* Primary */
+    --Yellow: hsl(47, 88%, 63%);
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    /* Typography */
+
+    /* Body Copy */
+
+    --fs-regular: 16px;
+    --fw-regular: 600;
+    --fw-bold: 800;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family: 'Figtree';
+    background-color: var(--Yellow);
+    font-size: var(--fs-regular);
+    font-weight: var(--fs-regular);
+    display: flex;
+    justify-content: center;
+}
+.blog-card {
+    background-color: var(--White);
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 1rem;
+    overflow: hidden;
+    gap: 1rem;
+    max-width: 300px;
+    padding: 1rem;
+    border: 2px var(--Black) solid;
+    box-shadow: 10px 10px var(--Black);
+    margin: 3rem;
+}
+.hero {
+    border-radius: 1rem;
+}
+.tag {
+    display: flex;
+}
+.tag p {
+    background-color: var(--Yellow);
+    color: var(--Black);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: var(--fw-bold);
+}
+h2 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    color: var(--Grey)
+}
+.author {
+    font-weight: var(--fw-bold);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.author p {
+    color: var(--Black)
+}
+.avatar {
+    max-width: 2rem;
+}
